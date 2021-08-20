@@ -1,24 +1,9 @@
-# node-yunji-sms
+var accessKey = '';//云极提供的accessKey
+var accessSecret = '';//云极提供的accessSecret
+const classificationSecret = '';//云极提供的classificationSecret
 
-node 云极短信发送
-
-## Install 安装
-
-> use npm isntall
->
-> 使用 npm 安装
-
-```
-npm install node-yunji-sms
-```
-
-## Sample example 使用说明
-
-### init Client 初始化客户端
-
-```
 /**
- * 初始化客户端
+ * 初始化微信公众号开发客户端
  * @author xutao
  * @param    {[String]}                 accessKey [云极提供的accessKey]
  * @param    {[String]}                 accessSecret [云极提供的accessSecret]
@@ -29,11 +14,8 @@ var yunjiSms = require('../index').initClient({
 	accessSecret:accessSecret,
     classificationSecret:classificationSecret
 });
-```
 
-### 发送短信
-
-```
+//发送短信
 /**
  * @param    {[String]}         signCode [签名id]
  * @param    {[String]}         templateCode [模板id]
@@ -49,4 +31,5 @@ var sendSms = function(signCode,templateCode,tels,params){
 		console.log(err);
 	})
 }
-```
+
+// sendSms('','',[],{})

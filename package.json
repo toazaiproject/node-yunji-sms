@@ -1,0 +1,15 @@
+{
+  "name": "node-yunji-sms",
+  "version": "1.0.4",
+  "description": "云极短信工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bluedtao",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "request": "^2.88.2"
+  }
+}
